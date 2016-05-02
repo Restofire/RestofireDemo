@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BDEF343509CB0E99950BC13 /* Pods_Restofire_NYT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53782A2FBFA679BE115C7445 /* Pods_Restofire_NYT.framework */; };
 		3567A5921CD753A8002745D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5911CD753A8002745D1 /* AppDelegate.swift */; };
-		3567A5941CD753A8002745D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5931CD753A8002745D1 /* ViewController.swift */; };
 		3567A5971CD753A8002745D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5951CD753A8002745D1 /* Main.storyboard */; };
 		3567A5991CD753A8002745D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5981CD753A8002745D1 /* Assets.xcassets */; };
 		3567A59C1CD753A8002745D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567A59A1CD753A8002745D1 /* LaunchScreen.storyboard */; };
+		3567A5A51CD765C4002745D1 /* MoviesReviewService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */; };
+		3567A5AA1CD765FD002745D1 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5A91CD765FD002745D1 /* MovieReview.swift */; };
+		3567A5AC1CD76F8E002745D1 /* MoviesReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5AB1CD76F8E002745D1 /* MoviesReviewTableViewController.swift */; };
+		3567A5AE1CD77399002745D1 /* MovieReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5AD1CD77399002745D1 /* MovieReviewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3567A58E1CD753A8002745D1 /* Restofire-NYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restofire-NYT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3567A5911CD753A8002745D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3567A5931CD753A8002745D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3567A5961CD753A8002745D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3567A5981CD753A8002745D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3567A59B1CD753A8002745D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3567A59D1CD753A8002745D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesReviewService+GET.swift"; sourceTree = "<group>"; };
+		3567A5A91CD765FD002745D1 /* MovieReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
+		3567A5AB1CD76F8E002745D1 /* MoviesReviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesReviewTableViewController.swift; sourceTree = "<group>"; };
+		3567A5AD1CD77399002745D1 /* MovieReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReviewTableViewCell.swift; sourceTree = "<group>"; };
+		53782A2FBFA679BE115C7445 /* Pods_Restofire_NYT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restofire_NYT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF46506277C661D480F5FBA5 /* Pods-Restofire-NYT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restofire-NYT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restofire-NYT/Pods-Restofire-NYT.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB8C70A1B22F3BBAA30622C /* Pods-Restofire-NYT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restofire-NYT.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restofire-NYT/Pods-Restofire-NYT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDEF343509CB0E99950BC13 /* Pods_Restofire_NYT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134AC4B0554CB5CEF2C0FCF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53782A2FBFA679BE115C7445 /* Pods_Restofire_NYT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3567A5851CD753A8002745D1 = {
 			isa = PBXGroup;
 			children = (
 				3567A5901CD753A8002745D1 /* Restofire-NYT */,
 				3567A58F1CD753A8002745D1 /* Products */,
+				E01F4A6C7BF622A3B10A0A24 /* Pods */,
+				134AC4B0554CB5CEF2C0FCF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,49 @@
 			isa = PBXGroup;
 			children = (
 				3567A5911CD753A8002745D1 /* AppDelegate.swift */,
-				3567A5931CD753A8002745D1 /* ViewController.swift */,
 				3567A5951CD753A8002745D1 /* Main.storyboard */,
+				3567A5AF1CD7808B002745D1 /* MoviesReview */,
+				3567A5A81CD765FD002745D1 /* Realm */,
+				3567A5A31CD76571002745D1 /* Services */,
 				3567A5981CD753A8002745D1 /* Assets.xcassets */,
 				3567A59A1CD753A8002745D1 /* LaunchScreen.storyboard */,
 				3567A59D1CD753A8002745D1 /* Info.plist */,
 			);
 			path = "Restofire-NYT";
+			sourceTree = "<group>";
+		};
+		3567A5A31CD76571002745D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3567A5A81CD765FD002745D1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				3567A5A91CD765FD002745D1 /* MovieReview.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3567A5AF1CD7808B002745D1 /* MoviesReview */ = {
+			isa = PBXGroup;
+			children = (
+				3567A5AB1CD76F8E002745D1 /* MoviesReviewTableViewController.swift */,
+				3567A5AD1CD77399002745D1 /* MovieReviewTableViewCell.swift */,
+			);
+			name = MoviesReview;
+			sourceTree = "<group>";
+		};
+		E01F4A6C7BF622A3B10A0A24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF46506277C661D480F5FBA5 /* Pods-Restofire-NYT.debug.xcconfig */,
+				EFB8C70A1B22F3BBAA30622C /* Pods-Restofire-NYT.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3567A5A01CD753A8002745D1 /* Build configuration list for PBXNativeTarget "Restofire-NYT" */;
 			buildPhases = (
+				B4845BB6E034EDEA90CF971D /* 📦 Check Pods Manifest.lock */,
 				3567A58A1CD753A8002745D1 /* Sources */,
 				3567A58B1CD753A8002745D1 /* Frameworks */,
 				3567A58C1CD753A8002745D1 /* Resources */,
+				62A65FFA76F95A395D30E94F /* 📦 Embed Pods Frameworks */,
+				9479406C4CF7216957FD69E6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +190,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62A65FFA76F95A395D30E94F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Restofire-NYT/Pods-Restofire-NYT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9479406C4CF7216957FD69E6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Restofire-NYT/Pods-Restofire-NYT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4845BB6E034EDEA90CF971D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3567A58A1CD753A8002745D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3567A5941CD753A8002745D1 /* ViewController.swift in Sources */,
+				3567A5AE1CD77399002745D1 /* MovieReviewTableViewCell.swift in Sources */,
+				3567A5AC1CD76F8E002745D1 /* MoviesReviewTableViewController.swift in Sources */,
 				3567A5921CD753A8002745D1 /* AppDelegate.swift in Sources */,
+				3567A5AA1CD765FD002745D1 /* MovieReview.swift in Sources */,
+				3567A5A51CD765C4002745D1 /* MoviesReviewService+GET.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +358,7 @@
 		};
 		3567A5A11CD753A8002745D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF46506277C661D480F5FBA5 /* Pods-Restofire-NYT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Restofire-NYT/Info.plist";
@@ -258,6 +370,7 @@
 		};
 		3567A5A21CD753A8002745D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB8C70A1B22F3BBAA30622C /* Pods-Restofire-NYT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Restofire-NYT/Info.plist";
@@ -286,6 +399,7 @@
 				3567A5A21CD753A8002745D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
