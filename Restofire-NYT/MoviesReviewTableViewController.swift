@@ -21,6 +21,8 @@ class MoviesReviewTableViewController: UITableViewController {
         MoviesReviewGETService(path: "all.json", parameters: ["api-key":"sample-key"])
             .executeTask()
         
+        results = realm.objects(MovieReview)
+        
         notificationToken = results.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
             guard let _self = self else { return }
             switch changes {
@@ -33,8 +35,15 @@ class MoviesReviewTableViewController: UITableViewController {
         }
         
     }
+    
+    deinit {
+        notificationToken = nil
+    }
 
-    // MARK: - Table view data source
+}
+
+// MARK: - TableView Delegate and Datasoruce
+extension MoviesReviewTableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results?.count ?? 0
@@ -57,10 +66,6 @@ class MoviesReviewTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
-    }
- 
-    deinit {
-        notificationToken = nil
     }
 
 }
