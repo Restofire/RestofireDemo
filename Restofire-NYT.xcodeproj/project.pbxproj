@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BDEF343509CB0E99950BC13 /* Pods_Restofire_NYT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53782A2FBFA679BE115C7445 /* Pods_Restofire_NYT.framework */; };
+		354DE49F1CE1A336007B04C5 /* MoviesReviewService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DE49E1CE1A336007B04C5 /* MoviesReviewService+GET.swift */; };
 		3567A5921CD753A8002745D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5911CD753A8002745D1 /* AppDelegate.swift */; };
 		3567A5971CD753A8002745D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5951CD753A8002745D1 /* Main.storyboard */; };
 		3567A5991CD753A8002745D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5981CD753A8002745D1 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354DE49E1CE1A336007B04C5 /* MoviesReviewService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesReviewService+GET.swift"; sourceTree = "<group>"; };
 		3567A58E1CD753A8002745D1 /* Restofire-NYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restofire-NYT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3567A5911CD753A8002745D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3567A5961CD753A8002745D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		354DE49D1CE1A336007B04C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				354DE49E1CE1A336007B04C5 /* MoviesReviewService+GET.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3567A5851CD753A8002745D1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				3567A5951CD753A8002745D1 /* Main.storyboard */,
 				3567A5AF1CD7808B002745D1 /* MoviesReview */,
 				3567A5A81CD765FD002745D1 /* Realm */,
+				354DE49D1CE1A336007B04C5 /* Services */,
 				3567A5981CD753A8002745D1 /* Assets.xcassets */,
 				3567A59A1CD753A8002745D1 /* LaunchScreen.storyboard */,
 				3567A59D1CD753A8002745D1 /* Info.plist */,
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3567A5AE1CD77399002745D1 /* MovieReviewTableViewCell.swift in Sources */,
+				354DE49F1CE1A336007B04C5 /* MoviesReviewService+GET.swift in Sources */,
 				3567A5AC1CD76F8E002745D1 /* MoviesReviewTableViewController.swift in Sources */,
 				3567A5921CD753A8002745D1 /* AppDelegate.swift in Sources */,
 				3567A5AA1CD765FD002745D1 /* MovieReview.swift in Sources */,
