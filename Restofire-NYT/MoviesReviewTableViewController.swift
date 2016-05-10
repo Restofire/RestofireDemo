@@ -18,22 +18,6 @@ class MoviesReviewTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MoviesReviewGETService(path: "all.json", parameters: ["api-key":"sample-key"])
-            .executeTask()
-        
-        results = realm.objects(MovieReview)
-        
-        notificationToken = results.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
-            guard let _self = self else { return }
-            switch changes {
-            case .Initial, .Update(_, deletions: _, insertions: _, modifications: _):
-                _self.results = _self.realm.objects(MovieReview)
-                _self.tableView.reloadData()
-            default:
-                break
-            }
-        }
-        
     }
     
     deinit {

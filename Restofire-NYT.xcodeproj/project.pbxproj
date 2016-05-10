@@ -12,7 +12,6 @@
 		3567A5971CD753A8002745D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5951CD753A8002745D1 /* Main.storyboard */; };
 		3567A5991CD753A8002745D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3567A5981CD753A8002745D1 /* Assets.xcassets */; };
 		3567A59C1CD753A8002745D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567A59A1CD753A8002745D1 /* LaunchScreen.storyboard */; };
-		3567A5A51CD765C4002745D1 /* MoviesReviewService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */; };
 		3567A5AA1CD765FD002745D1 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5A91CD765FD002745D1 /* MovieReview.swift */; };
 		3567A5AC1CD76F8E002745D1 /* MoviesReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5AB1CD76F8E002745D1 /* MoviesReviewTableViewController.swift */; };
 		3567A5AE1CD77399002745D1 /* MovieReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A5AD1CD77399002745D1 /* MovieReviewTableViewCell.swift */; };
@@ -25,7 +24,6 @@
 		3567A5981CD753A8002745D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3567A59B1CD753A8002745D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3567A59D1CD753A8002745D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesReviewService+GET.swift"; sourceTree = "<group>"; };
 		3567A5A91CD765FD002745D1 /* MovieReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
 		3567A5AB1CD76F8E002745D1 /* MoviesReviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesReviewTableViewController.swift; sourceTree = "<group>"; };
 		3567A5AD1CD77399002745D1 /* MovieReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReviewTableViewCell.swift; sourceTree = "<group>"; };
@@ -79,20 +77,11 @@
 				3567A5951CD753A8002745D1 /* Main.storyboard */,
 				3567A5AF1CD7808B002745D1 /* MoviesReview */,
 				3567A5A81CD765FD002745D1 /* Realm */,
-				3567A5A31CD76571002745D1 /* Services */,
 				3567A5981CD753A8002745D1 /* Assets.xcassets */,
 				3567A59A1CD753A8002745D1 /* LaunchScreen.storyboard */,
 				3567A59D1CD753A8002745D1 /* Info.plist */,
 			);
 			path = "Restofire-NYT";
-			sourceTree = "<group>";
-		};
-		3567A5A31CD76571002745D1 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				3567A5A41CD765C4002745D1 /* MoviesReviewService+GET.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		3567A5A81CD765FD002745D1 /* Realm */ = {
@@ -247,7 +236,6 @@
 				3567A5AC1CD76F8E002745D1 /* MoviesReviewTableViewController.swift in Sources */,
 				3567A5921CD753A8002745D1 /* AppDelegate.swift in Sources */,
 				3567A5AA1CD765FD002745D1 /* MovieReview.swift in Sources */,
-				3567A5A51CD765C4002745D1 /* MoviesReviewService+GET.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

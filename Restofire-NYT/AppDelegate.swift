@@ -18,9 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Restofire.defaultConfiguration.baseURL = "http://api.nytimes.com/svc/movies/v2/"
-        Restofire.defaultConfiguration.logging = true
-        
         return true
     }
 
