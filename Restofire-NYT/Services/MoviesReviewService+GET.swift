@@ -17,8 +17,8 @@ struct MoviesReviewGETService: Requestable {
     var encoding: ParameterEncoding = .URLEncodedInURL
     
     init(path: String, parameters: AnyObject) {
-       self.path += path
-       self.parameters = parameters
+        self.path += path
+        self.parameters = parameters
     }
     
 }
@@ -29,7 +29,8 @@ import SwiftyJSON
 
 extension MoviesReviewGETService {
     
-    func didSucceedWithModel(model: AnyObject) {
+    func didCompleteRequestWithResponse(response: Response<Model, NSError>) {
+        guard let model = response.result.value else { return }
         let realm = try! Realm()
         let jsonMovieReview = JSON(model)
         if let results = jsonMovieReview["results"].array {

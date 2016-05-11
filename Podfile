@@ -5,9 +5,9 @@ use_frameworks!
 
 target 'Restofire-NYT' do
 
-pod 'Restofire', '1.0.0'
+pod 'Restofire', '1.1.0'
 pod 'SwiftyJSON', '2.3.2'
-pod 'RealmSwift', '0.100.0'
+pod 'RealmSwift', '0.102.0'
 
 end
 
