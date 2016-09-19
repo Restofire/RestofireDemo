@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.0.0)
+  - Argo (3.0.1):
+    - Runes (>= 3.0.0)
+  - Curry (2.3.2)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
+  - Restofire (2.0.0):
+    - Restofire/Core (= 2.0.0)
+  - Restofire/Core (2.0.0):
+    - Alamofire (~> 4.0.0)
+  - Runes (3.2.1)
+
+DEPENDENCIES:
+  - Argo (from `https://github.com/thoughtbot/Argo.git`, branch `master`)
+  - Curry (from `https://github.com/thoughtbot/Curry.git`, branch `master`)
+  - RealmSwift (~> 1.0)
+  - Restofire (~> 2.0)
+  - Runes (from `https://github.com/thoughtbot/Runes.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  Argo:
+    :branch: master
+    :git: https://github.com/thoughtbot/Argo.git
+  Curry:
+    :branch: master
+    :git: https://github.com/thoughtbot/Curry.git
+  Runes:
+    :branch: master
+    :git: https://github.com/thoughtbot/Runes.git
+
+CHECKOUT OPTIONS:
+  Argo:
+    :commit: 4b57653f7760bd3eedfd1c1fbc821bde191e603d
+    :git: https://github.com/thoughtbot/Argo.git
+  Curry:
+    :commit: 408134ffa8dd1c09b0050f65eae300381b934bf6
+    :git: https://github.com/thoughtbot/Curry.git
+  Runes:
+    :commit: e00cf681ec03a2dbf2b4cd6dd1e24d522f55474b
+    :git: https://github.com/thoughtbot/Runes.git
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Argo: f2e633ac01162010a2c3d8c495a59f5c79abe4d5
+  Curry: a018288326c97dd2e4f5b37e527d20749e4663c5
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  Restofire: df2bbc2fb63b817b52f5211159571440a42c6ca6
+  Runes: 6231c760e43f26bd3fe804f15bc08bd1e40e6c46
+
+PODFILE CHECKSUM: a2fcdc0cd3ddd40d8bbdaf30d20229215d17cb9a
+
+COCOAPODS: 1.1.0.rc.2

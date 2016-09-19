@@ -7,4 +7,4 @@ Restofire-NYT is a example project demonstrating [Restofire](http://github.com/R
 ## Installation
 To install, run the following command in your terminal
 
-`git clone https://github.com/pronto-it-labs/Restofire-NYT.git && pod install`
+`git clone https://github.com/Restofire/Restofire-NYT.git && cd Restofire-NYT && pod install`

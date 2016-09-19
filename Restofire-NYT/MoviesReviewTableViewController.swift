@@ -18,22 +18,18 @@ class MoviesReviewTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MoviesReviewGETService(path: "all.json", parameters: ["api-key":"sample-key"])
-            .executeTask()
-        
-        results = realm.objects(MovieReview)
+        results = realm.objects(MovieReview.self)
         
         notificationToken = results.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
             guard let _self = self else { return }
             switch changes {
-            case .Initial, .Update(_, deletions: _, insertions: _, modifications: _):
-                _self.results = _self.realm.objects(MovieReview)
+            case .initial, .update(_, deletions: _, insertions: _, modifications: _):
+                _self.results = _self.realm.objects(MovieReview.self)
                 _self.tableView.reloadData()
             default:
                 break
             }
         }
-        
     }
     
     deinit {
@@ -45,12 +41,12 @@ class MoviesReviewTableViewController: UITableViewController {
 // MARK: - TableView Delegate and Datasoruce
 extension MoviesReviewTableViewController {
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results?.count ?? 0
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MovieReviewCell", forIndexPath: indexPath) as! MovieReviewTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieReviewCell", for: indexPath) as! MovieReviewTableViewCell
 
         // Configure the cell...
         let movieReview = results[indexPath.row]
@@ -60,11 +56,11 @@ extension MoviesReviewTableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
 

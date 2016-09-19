@@ -5,9 +5,10 @@ use_frameworks!
 
 target 'Restofire-NYT' do
 
-pod 'Restofire', '1.1.0'
-pod 'SwiftyJSON', '2.3.2'
-pod 'RealmSwift', '0.102.0'
+pod 'Restofire', '~> 2.0'
+pod 'RealmSwift', '~> 1.0'
+pod 'Argo', :git => 'https://github.com/thoughtbot/Argo.git', :branch => 'master'
+pod 'Runes', :git => 'https://github.com/thoughtbot/Runes.git', :branch => 'master'
+pod 'Curry', :git => 'https://github.com/thoughtbot/Curry.git', :branch => 'master'
 
 end
-

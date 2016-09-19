@@ -11,12 +11,12 @@ import Alamofire
 
 struct MoviesReviewGETService: Requestable {
     
-    typealias Model = AnyObject
+    typealias Model = NYTResponse
     var path: String = "reviews/"
-    var parameters: AnyObject?
-    var encoding: ParameterEncoding = .URLEncodedInURL
+    var parameters: Any?
+    var encoding: ParameterEncoding = URLEncoding.default
     
-    init(path: String, parameters: AnyObject) {
+    init(path: String, parameters: Any) {
         self.path += path
         self.parameters = parameters
     }
@@ -25,22 +25,16 @@ struct MoviesReviewGETService: Requestable {
 
 // MARK: - Caching
 import RealmSwift
-import SwiftyJSON
+import Argo
 
 extension MoviesReviewGETService {
     
-    func didCompleteRequestWithResponse(response: Response<Model, NSError>) {
-        guard let model = response.result.value else { return }
-        let realm = try! Realm()
-        let jsonMovieReview = JSON(model)
-        if let results = jsonMovieReview["results"].array {
-            for result in results {
-                let movieReview = MovieReview()
-                movieReview.displayTitle = result["display_title"].stringValue
-                movieReview.summary = result["summary_short"].stringValue
-                try! realm.write {
-                    realm.add(movieReview, update: true)
-                }
+    func didCompleteRequestWithDataResponse(_ response: DataResponse<Model>) {
+        guard let nytResponse = response.result.value else { return }
+        if nytResponse.status == "OK" {
+            let realm = try! Realm()
+            for result in nytResponse.results! {
+                try! realm.write { realm.add(result, update: true) }
             }
         }
     }
