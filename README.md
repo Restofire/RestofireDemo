@@ -2,9 +2,9 @@
 
 Restofire-NYT is a example project demonstrating [Restofire](http://github.com/Restofire/Restofire) using the [NYTimes Movies Review API](http://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=sample-key).
 
-> Restofire is a protocol oriented networking abstraction layer in swift that is built on top of Alamofire to use services in a declartive way.
+> Restofire is a protocol oriented networking abstraction layer in swift that is built on top of Alamofire to use services in a declaritive way.
 
 ## Installation
-To install, run the following command in your terminal
+To install, run the following command in your terminal:
 
 `git clone https://github.com/Restofire/Restofire-NYT.git && cd Restofire-NYT && pod install`
