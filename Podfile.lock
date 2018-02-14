@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.6.0)
+  - BNRCoreDataStack (2.3.1)
+  - Restofire (4.0.0):
+    - Restofire/Core (= 4.0.0)
+  - Restofire/Core (4.0.0):
+    - Alamofire (~> 4.5)
+
+DEPENDENCIES:
+  - BNRCoreDataStack
+  - Restofire
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  BNRCoreDataStack: d9d7d0ed1afd27dca5a903dde1250aa4c6dbc3f5
+  Restofire: 24029e9926a9f0825e0aa8a10b3d5544eb3955d8
+
+PODFILE CHECKSUM: 1047b32c027a7e6bdcb5510f7475751d0bd91ab2
+
+COCOAPODS: 1.4.0

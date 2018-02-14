@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1C54FC61CC9AFA23678F02 /* Pods_RestofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF30779E9D9761D108C0818 /* Pods_RestofireDemo.framework */; };
 		35390E4820331F2700A50BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E4720331F2700A50BC5 /* AppDelegate.swift */; };
-		35390E4A20331F2700A50BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E4920331F2700A50BC5 /* ViewController.swift */; };
+		35390E4A20331F2700A50BC5 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E4920331F2700A50BC5 /* NotesTableViewController.swift */; };
 		35390E4D20331F2700A50BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35390E4B20331F2700A50BC5 /* Main.storyboard */; };
 		35390E4F20331F2700A50BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35390E4E20331F2700A50BC5 /* Assets.xcassets */; };
 		35390E5220331F2700A50BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35390E5020331F2700A50BC5 /* LaunchScreen.storyboard */; };
+		35390E5F2033702400A50BC5 /* NotesGETService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E5E2033702400A50BC5 /* NotesGETService.swift */; };
+		35390E632033703500A50BC5 /* NotePOSTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E622033703500A50BC5 /* NotePOSTService.swift */; };
+		35390E652033703E00A50BC5 /* NoteDELETEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E642033703E00A50BC5 /* NoteDELETEService.swift */; };
+		35390E74203379C400A50BC5 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35390E72203379C400A50BC5 /* Notes.xcdatamodeld */; };
+		35390E772033835E00A50BC5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35390E752033835E00A50BC5 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E62D0BEC3DD69D9203CAB60 /* Pods-RestofireDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestofireDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestofireDemo/Pods-RestofireDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35390E4420331F2700A50BC5 /* RestofireDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestofireDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35390E4720331F2700A50BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35390E4920331F2700A50BC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35390E4920331F2700A50BC5 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		35390E4C20331F2700A50BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35390E4E20331F2700A50BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35390E5120331F2700A50BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35390E5320331F2700A50BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35390E5E2033702400A50BC5 /* NotesGETService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesGETService.swift; sourceTree = "<group>"; };
+		35390E622033703500A50BC5 /* NotePOSTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePOSTService.swift; sourceTree = "<group>"; };
+		35390E642033703E00A50BC5 /* NoteDELETEService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDELETEService.swift; sourceTree = "<group>"; };
+		35390E73203379C400A50BC5 /* Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Note.xcdatamodel; sourceTree = "<group>"; };
+		35390E752033835E00A50BC5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		6DF30779E9D9761D108C0818 /* Pods_RestofireDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestofireDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB5B3D21C72DFB3ECE64CBF /* Pods-RestofireDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestofireDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestofireDemo/Pods-RestofireDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1C54FC61CC9AFA23678F02 /* Pods_RestofireDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				35390E4620331F2700A50BC5 /* RestofireDemo */,
 				35390E4520331F2700A50BC5 /* Products */,
+				47A232FBE5C607AD1383AA87 /* Pods */,
+				7725F915689233E3DC39E54B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,51 @@
 			isa = PBXGroup;
 			children = (
 				35390E4720331F2700A50BC5 /* AppDelegate.swift */,
-				35390E4920331F2700A50BC5 /* ViewController.swift */,
 				35390E4B20331F2700A50BC5 /* Main.storyboard */,
+				35390E4920331F2700A50BC5 /* NotesTableViewController.swift */,
+				35390E59203320AA00A50BC5 /* Networking */,
+				35390E71203379C400A50BC5 /* Model */,
 				35390E4E20331F2700A50BC5 /* Assets.xcassets */,
 				35390E5020331F2700A50BC5 /* LaunchScreen.storyboard */,
 				35390E5320331F2700A50BC5 /* Info.plist */,
 			);
 			path = RestofireDemo;
+			sourceTree = "<group>";
+		};
+		35390E59203320AA00A50BC5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35390E5E2033702400A50BC5 /* NotesGETService.swift */,
+				35390E622033703500A50BC5 /* NotePOSTService.swift */,
+				35390E642033703E00A50BC5 /* NoteDELETEService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		35390E71203379C400A50BC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35390E752033835E00A50BC5 /* Note.swift */,
+				35390E72203379C400A50BC5 /* Notes.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47A232FBE5C607AD1383AA87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCB5B3D21C72DFB3ECE64CBF /* Pods-RestofireDemo.debug.xcconfig */,
+				2E62D0BEC3DD69D9203CAB60 /* Pods-RestofireDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7725F915689233E3DC39E54B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DF30779E9D9761D108C0818 /* Pods_RestofireDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35390E5620331F2700A50BC5 /* Build configuration list for PBXNativeTarget "RestofireDemo" */;
 			buildPhases = (
+				4D255364FE8EFFF7EF25F3D2 /* [CP] Check Pods Manifest.lock */,
 				35390E4020331F2700A50BC5 /* Sources */,
 				35390E4120331F2700A50BC5 /* Frameworks */,
 				35390E4220331F2700A50BC5 /* Resources */,
+				294CA5A1EEB7C39306E07F23 /* [CP] Embed Pods Frameworks */,
+				AF678592A61027FF7545B5A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +189,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		294CA5A1EEB7C39306E07F23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RestofireDemo/Pods-RestofireDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BNRCoreDataStack/BNRCoreDataStack.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BNRCoreDataStack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestofireDemo/Pods-RestofireDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D255364FE8EFFF7EF25F3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestofireDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF678592A61027FF7545B5A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestofireDemo/Pods-RestofireDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35390E4020331F2700A50BC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35390E4A20331F2700A50BC5 /* ViewController.swift in Sources */,
+				35390E4A20331F2700A50BC5 /* NotesTableViewController.swift in Sources */,
+				35390E632033703500A50BC5 /* NotePOSTService.swift in Sources */,
 				35390E4820331F2700A50BC5 /* AppDelegate.swift in Sources */,
+				35390E652033703E00A50BC5 /* NoteDELETEService.swift in Sources */,
+				35390E772033835E00A50BC5 /* Note.swift in Sources */,
+				35390E5F2033702400A50BC5 /* NotesGETService.swift in Sources */,
+				35390E74203379C400A50BC5 /* Notes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +393,7 @@
 		};
 		35390E5720331F2700A50BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB5B3D21C72DFB3ECE64CBF /* Pods-RestofireDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +408,7 @@
 		};
 		35390E5820331F2700A50BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E62D0BEC3DD69D9203CAB60 /* Pods-RestofireDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +443,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35390E72203379C400A50BC5 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35390E73203379C400A50BC5 /* Note.xcdatamodel */,
+			);
+			currentVersion = 35390E73203379C400A50BC5 /* Note.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 35390E3C20331F2700A50BC5 /* Project object */;
 }
